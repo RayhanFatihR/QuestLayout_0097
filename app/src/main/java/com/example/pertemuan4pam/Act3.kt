@@ -1,7 +1,10 @@
 package com.example.pertemuan4pam
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -27,6 +30,14 @@ fun ActivityPertama(modifier: Modifier){
         Text(
             stringResource(R.string.univ),
             fontSize = 22.sp
+        )
+
+        Spacer(modifier = Modifier.height(25.dp))
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 12.dp)
+            colors
         )
     }
 }
