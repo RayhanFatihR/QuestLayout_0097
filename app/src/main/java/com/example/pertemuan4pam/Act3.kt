@@ -75,6 +75,9 @@ fun ActivityPertama(modifier: Modifier){
                     )
                 }
             }
+            Box(
+
+            )
         }
     }
 }
