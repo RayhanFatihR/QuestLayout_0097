@@ -1,6 +1,7 @@
 package com.example.pertemuan4pam
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -26,7 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun ActivityPertama(modifier: Modifier){
+fun ActivitasPertama(modifier: Modifier){
     Column(
         modifier = Modifier.padding(top = 100.dp)
             .fillMaxSize(),
@@ -83,14 +84,10 @@ fun ActivityPertama(modifier: Modifier){
             Text(
                 stringResource(R.string.copy),
                 modifier = Modifier
-
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
             )
         }
     }
 }
 
-private fun ColumnScope.Card(
-    modifier: Modifier,
-    colors: CardColors
-) {
-}
