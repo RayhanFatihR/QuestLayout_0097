@@ -59,7 +59,7 @@ fun ActivityPertama(modifier: Modifier){
                     modifier = Modifier.size(100.dp).padding(all = 5.dp)
                 )
                 Spacer(modifier = Modifier.width(30.dp))
-                Column(){
+                Column() {
                     Text(
                         stringResource("Rayhan Fatih Ramadhani"),
                         fontSize = 30.sp,
@@ -75,7 +75,14 @@ fun ActivityPertama(modifier: Modifier){
                     )
                 }
             }
-            Box(
+        }
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+        ) {
+            Text(
+                stringResource(R.string.copy),
+                modifier = Modifier
 
             )
         }
